@@ -4,7 +4,7 @@ Bundle for [Sequel Pro](http://www.sequelpro.com/) to re-format/beautify the cur
 
 ## Install `sqlparse`
 
-This is a simple wrapper around the [Python `sqlparse` module](https://github.com/andialbrecht/sqlparse). You
+This is a simple wrapper around the Python [`sqlparse` module](https://github.com/andialbrecht/sqlparse). You
 need to install that first:
 
     pip install sqlparse
