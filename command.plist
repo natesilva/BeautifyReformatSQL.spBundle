@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Nate Silva</string>
+	<key>category</key>
+	<string>Format</string>
+	<key>command</key>
+	<string>#!/usr/bin/env python
+
+from __future__ import print_function
+import sys
+
+try:
+    import sqlparse
+except ImportError:
+    print(
+        'Please install the sqlparse Python module (pip install sqlparse)',
+        file=sys.stderr
+    )
+    sys.exit(1)
+
+result = sqlparse.format(sys.stdin.read(), reindent=True)
+
+print(result)
+</string>
+	<key>contact</key>
+	<string>angr@angrfvyin.pbz</string>
+	<key>description</key>
+	<string>A simple wrapper around the Python sqlparse module.
+
+Re-formats/beautifies the currently-displayed query.
+
+You must install the Python sqlparse module, which can be done using pip or easy_install (pip install sqlparse).</string>
+	<key>input</key>
+	<string>entirecontent</string>
+	<key>internalKeyEquivalent</key>
+	<dict>
+		<key>characters</key>
+		<string>F</string>
+		<key>keyCode</key>
+		<integer>3</integer>
+		<key>modifierFlags</key>
+		<integer>393216</integer>
+	</dict>
+	<key>keyEquivalent</key>
+	<string>^$F</string>
+	<key>name</key>
+	<string>Beautify/Reformat SQL</string>
+	<key>output</key>
+	<string>replacecontent</string>
+	<key>scope</key>
+	<string>inputfield</string>
+	<key>tooltip</key>
+	<string>Beautify/re-format the SQL query</string>
+	<key>uuid</key>
+	<string>489B4B3D-34F6-4495-AE9C-C79250598967</string>
+</dict>
+</plist>
