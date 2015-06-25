@@ -15,7 +15,7 @@ or:
 
 ## Install the bundle
 
-To install this bundle, download the [latest release](https://github.com/natesilva/BeautifyReformatSQL.spBundle/releases/latest) and double-click it.
+To install this bundle, download and unzip the [latest release](https://github.com/natesilva/BeautifyReformatSQL.spBundle/releases/latest), then double-click the bundle file.
 
 ## Use
 
